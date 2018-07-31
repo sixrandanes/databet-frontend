@@ -4,6 +4,8 @@ import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
+import { routing } from './app.routes';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -12,7 +14,9 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserAnimationsModule,
     HttpClientModule,
-    BrowserModule
+    BrowserModule,
+    routing,
+    SharedModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent],
