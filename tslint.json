@@ -1,6 +1,6 @@
 {
   "rulesDirectory": [
-    "node_modules/codelyzer"
+    "node_modules/codelyzer", "node_modules/tslint-eslint-rules/dist/rules"
   ],
   "rules": {
     "arrow-return-shorthand": true,
@@ -15,6 +15,15 @@
       "severity": "warn"
     },
     "eofline": true,
+    "jsdoc-format": true,
+    "no-duplicate-variable": true,
+    "no-invalid-this": true,
+    "no-conditional-assignment": true,
+    "no-consecutive-blank-lines": true,
+    "no-var-requires": true,
+    "no-namespace": true,
+    "no-reference": true,
+    "no-unused-variable": true,
     "forin": true,
     "import-blacklist": [
       true,
@@ -29,7 +38,7 @@
     "label-position": true,
     "max-line-length": [
       true,
-      140
+      240
     ],
     "member-access": false,
     "member-ordering": [
@@ -92,6 +101,7 @@
       true,
       "always"
     ],
+    "switch-default": true,
     "triple-equals": [
       true,
       "allow-null-check"
@@ -125,6 +135,33 @@
     "use-life-cycle-interface": true,
     "use-pipe-transform-interface": true,
     "component-class-suffix": true,
-    "directive-class-suffix": true
+    "directive-class-suffix": true,
+    "no-constant-condition": "error",
+    "no-control-regex": "error",
+    "no-duplicate-case": "error",
+    "no-empty-character-class": "error",
+    "no-ex-assign": "error",
+    "no-extra-semi": "error",
+    "no-extra-boolean-cast": "error",
+    "no-inner-declarations": "error",
+    "no-invalid-regexp": "error",
+    "no-regex-spaces": "error",
+    "no-sparse-arrays": "error",
+    "no-unexpected-multiline": "error",
+    "use-isnan": "error",
+    "valid-jsdoc": "error",
+    "valid-typeof": "error",
+
+    "angular-whitespace": [true, "check-semicolon"],
+    "banana-in-box": true,
+    "templates-no-negated-async": true,
+    "component-selector": [true, "element", "databet", "kebab-case"],
+    "use-view-encapsulation": true,
+    "no-attribute-parameter-decorator": true,
+    "import-destructuring-spacing": true,
+    "block-spacing": "error",
+    "brace-style": [2, "stroustrup"],
+    "handle-callback-err": "error",
+    "no-forward-ref": false
   }
 }
