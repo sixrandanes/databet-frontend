@@ -1,8 +1,15 @@
-<main role="main" id="welcome">
-
-
+<main role="main">
+    <h2>Liste des compétitions ({{test.length}}) </h2>
     <ul>
-        <li *ngFor="let data of test">{{data.name}}  ({{data.area?.name}} - {{data?.currentSeason?.currentMatchday}}) </li>
+        <li *ngFor="let data of test">{{data.name}}  ({{data.area?.name}} - {{data?.currentSeason?.currentMatchday}} journées) </li>
     </ul>
+
+    <br/>
+
+    <h2>Liste des matches ({{matches.length}}) </h2>
+    <ul>
+        <li *ngFor="let match of matches">{{match.homeTeam.name}} / {{match.awayTeam.name}} :: {{match.status}} / {{match.utcDate}}</li>
+    </ul>
+
 
 </main>
